@@ -65,14 +65,9 @@ def move(board, sm, direction):
 best = 0
 def solve(board, cnt, maxval):
     global best
-    if maxval <= mem[cnt]: return
+    if maxval * (2 ** (5-cnt)) <= best: return
     best = max(best, maxval)
     if cnt == 5:
-        if best == maxval:
-            tmp = maxval
-            for i in range(5, -1, -1):
-                mem[i] = tmp
-                tmp //= 2
         return
     ne = [move(board, maxval, i) for i in range(4)]
     ne.sort(reverse = True)
@@ -82,7 +77,6 @@ def solve(board, cnt, maxval):
 
 n = int(input())
 board = [list(map(int, input().split())) for _ in range(n)]
-mem = [0 for _ in range(11)]
 sm = max([max(board[i]) for i in range(n)])
 solve(board, 0, sm)
 print(best)
