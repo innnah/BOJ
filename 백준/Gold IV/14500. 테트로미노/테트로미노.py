@@ -1,1 +1,28 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+pieces = [[[[0, 0], [1, 0], [2, 0], [3, 0]], [[0, 0], [0, 1], [0, 2], [0, 3]]],
+          [[[0, 0], [0, 1], [1, 0], [1, 1]]],
+          [[[0, 0], [1, 0], [2, 0], [2, -1]], [[0, 0], [1, 0], [2, 0], [2, 1]], [[0, 0], [0, 1], [0, 2], [1, 2]], [[0, 0], [0, 1], [0, 2], [-1, 2]],
+           [[0, 0], [-1, 0], [-2, 0], [-2, -1]], [[0, 0], [-1, 0], [-2, 0], [-2, 1]], [[0, 0], [0, -1], [0, -2], [1, -2]], [[0, 0], [0, -1], [0, -2], [-1, -2]]],
+          [[[0, 0], [-1, -1], [0, -1], [1, -1]], [[0, 0], [-1, 1], [0, 1], [1, 1]], [[0, 0], [1, -1], [1, 0], [1, 1]], [[0, 0], [-1, -1], [-1, 0], [-1, 1]]],
+          [[[0, 0], [0, 1], [1, 1], [1, 2]], [[0, 0], [0, 1], [-1, 1], [-1, 2]], [[0, 0], [1, 0], [1, 1], [2, 1]], [[0, 0], [1, 0], [1, -1], [2, -1]]]]
+def isInside(x, y): return 0<=x<m and 0<=y<n
+n, m = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(n)]
+ret = 0
+for i in range(n):
+    for j in range(m):
+        x, y = j, i
+        for sort in pieces:
+            for piece in sort:
+                cand = 0
+                for k in piece:
+                    dx, dy = k
+                    nx, ny = x + dx, y + dy
+                    if not isInside(nx, ny):
+                        break
+                    cand += arr[ny][nx]
+                else:
+                    ret = max(cand, ret)
+print(ret)
