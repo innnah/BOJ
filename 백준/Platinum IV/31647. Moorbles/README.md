@@ -1,0 +1,39 @@
+# [Platinum IV] Moorbles - 31647 
+
+[문제 링크](https://acmicpc.net/problem/31647) 
+
+### 성능 요약
+
+메모리: 214948 KB, 시간: 1452 ms
+
+### 분류
+
+다이나믹 프로그래밍, 그리디, 누적 합
+
+### 제출 일자
+
+2025년 4월 3일 19:01:04
+
+### 문제 설명
+
+<p>Bessie and Elsie are playing a game of Moorbles. The game works as follows: Bessie and Elsie each start out with some amount of marbles. Bessie holds out $A$ of her marbles in her hoof and Elsie guesses if $A$ is Even or Odd. If Elsie is correct, she wins the $A$ marbles from Bessie and if she guesses incorrectly, she loses $A$ of her marbles to Bessie (if Elsie has less than $A$ marbles, she loses all her marbles). A player loses when they lose all of their marbles.</p>
+
+<p>After some amount of turns in the game, Elsie has $N$ $(1 \leq N \leq 10^9)$ marbles. She thinks it is hard to win, but she is playing to not lose. After being around Bessie enough, Elsie has a good read on Bessie's habits and recognizes that on turn $i$, there are only $K$ $(1 \leq K \leq 4)$ different amounts of marbles that Bessie may put out. There are only $M$ $(1 \leq M \leq 3 \cdot 10^5)$ turns before Bessie gets bored and stops playing. Can you identify a lexicographically minimum turn sequence such that Elsie will not lose, regardless of how Bessie plays?</p>
+
+### 입력 
+
+ <p>The first line contains a single integer $T$ ($1 \leq T \leq 10$) representing the number of test cases. Each test case is described as follows:</p>
+
+<ul>
+	<li>First, one line containing three integers $N$, $M$, and $K$, representing the number of marbles Elsie has, the number of turns, and the number of potential moves Bessie can make respectively.</li>
+	<li>Then, $M$ lines where line $i$ contains $K$ distinct space separated integers $a_{i,1}  a_{i,2} \ldots a_{i,K}$ ($1 \leq a_{i, j} \leq 10^3$) representing the possible amounts of marbles that Bessie might play on turn $i$.</li>
+</ul>
+
+<p>It is guaranteed that the sum of $M$ over all test cases is at most $3 \cdot 10^5$.</p>
+
+### 출력 
+
+ <p>For each test case, output the lexicographically minimum move sequence for Elsie to guarantee not losing, or $-1$ if she will lose. The move sequence should be on a single line and consist of $M$ space-separated tokens each equal to either "Even" or "Odd".</p>
+
+<p>Note: "Even" is lexicographically smaller than "Odd".</p>
+
