@@ -2,7 +2,6 @@ import sys
 sys.setrecursionlimit(201270)
 input = sys.stdin.readline
 
-MOD = 10**9+7
 def euler_dfs(v, p):
     global cnt
     start[v] = cnt
@@ -39,18 +38,17 @@ end = [0 for _ in range(n+1)]
 cnt = 1
 euler_dfs(1, -1)
 
-ans = 0
-querys = [list(map(int, input().split())) for _ in range(m)]
+ans = [0 for _ in range(m)]
+querys = [list(map(int, input().split())) + [i] for i in range(m)]
 querys.sort(key = lambda x : x[1])
 
 tree = [0 for _ in range(n+1)]
 j = 0
 for i in range(m):
-    v, k = querys[i]
+    v, k, idx = querys[i]
     while j < n and colors[j][0] <= k:
         color, node = colors[j]
         update(start[node], 1)
         j += 1
-    ans += query(end[v]) - (query(start[v]-1) if start[v] > 1 else 0)
-    ans %= MOD
-print(ans)
+    ans[idx] = query(end[v]) - (query(start[v]-1) if start[v] > 1 else 0)
+print(sum(ans)%1000000007)
