@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n=int(input())
+if n==1:
+    print("B")
+else:
+    print("A")
