@@ -1,7 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <bits/stdc++.h>
+#include <cstdio>
+#include <random>
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef unsigned long long int ulli;
 using namespace std;
 
 #define fastio ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
+#define endl "\n"
+#define __builtin_popcount __popcnt
+#define pll pair<ll, ll>
+#define pint pair<int, int>
 
 struct TrieNode {
     map<char, TrieNode*> children;
