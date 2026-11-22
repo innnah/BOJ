@@ -1,1 +1,12 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+print = sys.stdout.write
+n = int(input())
+for i in range(1, n+1):
+    if i%11 == 0 and i%7 == 0:
+        print("Wiwat!\n")
+    elif i % 11 == 0:
+        print("Super!\n")
+    elif i % 7 == 0:
+        print("Hurra!\n")
+    else:
+        print(str(i)+"\n")
