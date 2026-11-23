@@ -1,1 +1,0 @@
-n=int(input());l=[print("*"*n) for _ in range(n)]
