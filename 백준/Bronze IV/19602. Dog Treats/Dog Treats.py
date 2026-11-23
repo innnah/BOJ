@@ -1,0 +1,4 @@
+a=int(input())
+b = int(input())
+c = int(input())
+print("sad" if a+2*b+3*c<10 else "happy")
