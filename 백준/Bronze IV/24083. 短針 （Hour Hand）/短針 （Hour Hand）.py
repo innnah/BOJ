@@ -1,0 +1,1 @@
+s=(int(input())+int(input()))%12;print(s if s!=0 else 12)

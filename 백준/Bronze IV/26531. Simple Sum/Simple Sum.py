@@ -1,0 +1,8 @@
+s = input()
+tmp = s.split(" + ")
+tmp2 = tmp[1].split(" = ")
+a = int(tmp[0])
+b = int(tmp2[0])
+c = int(tmp2[1])
+if a+b==c: print("YES")
+else: print("NO")

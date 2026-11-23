@@ -1,0 +1,1 @@
+s=input();print(1if s==s[::-1]else 0);

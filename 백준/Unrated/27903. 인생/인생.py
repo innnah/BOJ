@@ -1,0 +1,1 @@
+print(chr(int('3M', 27))+chr(52+2+65)+chr(6*8)+chr(52)+chr(7*7)+chr(57))
