@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n, m = map(int, input().split())
+MOD = 14579
+ret = 1
+for i in range(n, m+1):
+    ret *= i*(i+1)//2
+    ret %= MOD
+print(ret)

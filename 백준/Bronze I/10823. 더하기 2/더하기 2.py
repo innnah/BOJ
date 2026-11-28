@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+r=sys.stdin.readlines
+l=r()
+l=''.join([i.rstrip()for i in l])
+print(sum(map(int,l.split(','))))

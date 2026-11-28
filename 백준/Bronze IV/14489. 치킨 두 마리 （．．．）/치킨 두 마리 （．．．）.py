@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b = map(int, input().split())
+n = int(input())
+if a+b >= n*2:
+    print(a+b-n*2)
+else:
+    print(a+b)

@@ -1,1 +1,9 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+s = 0
+for _ in range(int(input())):
+    l = list(map(int, input().split()))
+    a, b = l[:2], l[2:]
+    b.sort()
+    s = max(s, max(a)+b[-2]+b[-1])
+print(s)

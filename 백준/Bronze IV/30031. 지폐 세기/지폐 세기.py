@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+d = {136:1000,142:5000,148:10000,154:50000}
+s = 0
+for _ in range(int(input())):
+    a, _ = map(int, input().split())
+    s += d[a]
+print(s)

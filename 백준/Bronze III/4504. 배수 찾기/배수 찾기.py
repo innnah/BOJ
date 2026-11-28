@@ -1,1 +1,8 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+while True:
+    s = int(input())
+    if s == 0: break
+    if s % n == 0:
+        print(f"{s} is a multiple of {n}.")
+    else:
+        print(f"{s} is NOT a multiple of {n}.")

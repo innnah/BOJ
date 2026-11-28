@@ -1,1 +1,13 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+d = set()
+n = int(input())
+l = input().rstrip().split()
+for i in l:
+    if i[-6:] == "Cheese":
+        d.add(i)
+if len(d) >= 4:
+    print("yummy")
+else:
+    print("sad")

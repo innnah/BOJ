@@ -1,1 +1,18 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+rules = {}
+for _ in range(n):
+    c, _, *nxts = input().rstrip().split()
+    rules[c] = nxts
+
+s = input().rstrip()
+for i in range(len(s)-1):
+    if rules.get(s[i]) == None or s[i+1] in rules.get(s[i]):
+        continue
+    else:
+        print("no")
+        break
+else:
+    print("yes")

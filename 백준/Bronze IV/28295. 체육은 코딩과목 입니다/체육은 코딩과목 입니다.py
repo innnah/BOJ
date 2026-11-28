@@ -1,1 +1,14 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+d = {0 : "N", 1 : "E", 2 : "S", 3 : "W"}
+direction = 0
+for _ in range(10):
+    o = int(input())
+    if o == 1:
+        direction += 1
+        direction %= 4
+    elif o == 2:
+        direction += 2
+        direction %= 4
+    else:
+        direction -= 1
+        direction = (direction+4) % 4
+print(d[direction])

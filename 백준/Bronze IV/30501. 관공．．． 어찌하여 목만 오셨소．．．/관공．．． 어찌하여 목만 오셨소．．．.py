@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+for _ in range(int(input())):
+    s = input().rstrip()
+    if 'S' in s:
+        print(s)
+        break

@@ -1,1 +1,4 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a = list(map(int, input().split()))
+c = list(map(int, input().split()))
+b = [c[0]-a[2], c[1]//a[1], c[2]-a[0]]
+print(*b)

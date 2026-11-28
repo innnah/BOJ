@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+mod = 10**9 + 7
+for _ in range(int(input())):
+    n = int(input())
+    print((pow(5, n-1, mod)*4)%mod+(n==1))

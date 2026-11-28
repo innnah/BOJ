@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+d = {"fdsajkl;" : "in-out", "jkl;fdsa" : "in-out", "asdf;lkj" : "out-in", ";lkjasdf" : "out-in", "asdfjkl;" : "stairs", ";lkjfdsa" : "reverse"}
+s=input()
+if d.get(s) is None:
+    print("molu")
+else:
+    print(d[s])

@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+val = sum(map(int, input().split())) + sum(map(int, input().split())) - 2
+print(val%4+1)

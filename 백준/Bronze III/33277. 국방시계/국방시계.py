@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+min = m*1440//n
+print(f"{min//60:02d}:{min%60:02d}")

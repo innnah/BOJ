@@ -1,1 +1,9 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+a = (n//100)*100-1
+b = a+100
+if n <= 99:
+    print(99)
+elif n-a >= b-n:
+    print(b)
+else:
+    print(a)

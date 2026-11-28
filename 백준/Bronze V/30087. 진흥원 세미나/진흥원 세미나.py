@@ -1,1 +1,3 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+i=input
+d={"Algorithm":204,"DataAnalysis":207,"ArtificialIntelligence":302,"CyberSecurity":"B101","Network":303,"Startup":501,"TestStrategy":105}
+for _ in range(int(i())):print(d[i()])

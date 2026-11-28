@@ -1,1 +1,19 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+s = input()
+k = int(input())
+if s == 'induck':
+    if k % 2 == 1:
+        if k+1 > n:
+            print(k-1)
+        else:
+            print(k+1)
+    else:
+        print(k)
+else:
+    if k % 2 == 0:
+        if k+1 > n:
+            print(k-1)
+        else:
+            print(k+1)
+    else:
+        print(k)

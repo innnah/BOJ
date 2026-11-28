@@ -1,1 +1,9 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+m = int(input())
+k = m
+print(n)
+print(m)
+while m > 0:
+    print(n*(m%10))
+    m //= 10
+print(n*k)

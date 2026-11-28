@@ -1,1 +1,14 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+a = list(map(int, input().split()))
+
+timelist = []
+
+a.sort()
+
+time = 0
+
+for i in a:
+    time += i
+    timelist.append(time)
+
+print(sum(timelist))

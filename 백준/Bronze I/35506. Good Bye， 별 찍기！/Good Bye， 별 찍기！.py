@@ -1,1 +1,3 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+for i in range(n*2):
+    print(" "*(n*2-1-i)+"*"+" "*(i+1)+" "*int(abs(n-0.5-i))+"*"+" "*int(n*2-abs(n-0.5-i)*2)+"*"+" "*int(abs(n-0.5-i)))

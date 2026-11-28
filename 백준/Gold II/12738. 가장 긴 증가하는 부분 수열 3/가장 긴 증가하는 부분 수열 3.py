@@ -1,1 +1,15 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import bisect
+
+x = int(input())
+arr = list(map(int, input().split()))
+
+dp = [arr[0]]
+
+for i in range(x):
+    if arr[i] > dp[-1]:
+        dp.append(arr[i])
+    else:
+        idx = bisect.bisect_left(dp, arr[i])
+        dp[idx] = arr[i]
+
+print(len(dp))

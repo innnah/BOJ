@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+for _ in range(int(input())):
+    a,b=map(int,input().split())
+    for _ in range(b):
+        print("X"*a)
+    print()

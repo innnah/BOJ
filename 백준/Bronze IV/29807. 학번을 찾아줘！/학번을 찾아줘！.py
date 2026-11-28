@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+l = list(map(int, input().split()))
+l += [0 for i in range(5-n)]
+a = abs(l[2]-l[0]) * (108+(l[0]>l[2])*400)
+b = abs(l[1]-l[3]) * (305-(l[1]>l[3])*93)
+c = l[4]*707
+print((a+b+c)*4763)

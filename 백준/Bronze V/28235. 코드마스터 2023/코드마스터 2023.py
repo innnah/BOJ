@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+s=input()
+if s=='SONGDO':print("HIGHSCHOOL")
+elif s=='CODE':print("MASTER")
+elif s=='2023':print("0611")
+else:print("CONTEST")

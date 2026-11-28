@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b, c, d, n = map(int, input().split())
+print(max(0, 4*n-(a+b+c+d)))

@@ -1,1 +1,9 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b = input().split()
+va = len(a) * sum(map(int, a))
+vb = len(b) * sum(map(int, b))
+if va > vb:
+    print(1)
+elif va < vb:
+    print(2)
+else:
+    print(0)

@@ -1,1 +1,11 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+for i in range(int(input())):
+    a, b, c = map(int, input().split())
+    print(f"Case #{i+1}: ", end = '')
+    if max(a, b, c) >= a+b+c - max(a, b, c):
+        print("invalid!")
+    elif a == b and b == c:
+        print("equilateral")
+    elif a == b or b == c or c == a:
+        print("isosceles")
+    else:
+        print("scalene")

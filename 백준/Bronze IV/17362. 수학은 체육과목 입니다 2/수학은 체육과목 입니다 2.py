@@ -1,1 +1,3 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+d={1:1,2:2,3:3,4:4,5:5,6:4,7:3,8:2,9:1}
+n=int(input())-1
+print(d[n%8+1])

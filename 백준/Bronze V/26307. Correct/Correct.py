@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n, m = map(int, input().split())
+print((n-9)*60+m)

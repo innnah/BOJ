@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+i=lambda:map(int,input().split())
+n,k,m = i()
+l=list(i())
+ret=0
+for j in range(n):ret+=l[j*k:k*(j+1)].count(0)<m
+print(ret)

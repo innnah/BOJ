@@ -1,1 +1,21 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+a = input().rstrip()
+b = input().rstrip()
+if a == 'null':
+    print("NullPointerException")
+    print("NullPointerException")
+else:
+    if b == 'null':
+        print("false")
+        print("false")
+    else:
+        if a == b:
+            print('true')
+        else:
+            print('false')
+        if a.lower() == b.lower():
+            print('true')
+        else:
+            print('false')

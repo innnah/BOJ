@@ -1,1 +1,9 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+cnt = 0
+while n > 0:
+    if (cnt+1)**2 <= n:
+        cnt += 1
+        n -= cnt**2
+    else:
+        break
+print(cnt)

@@ -1,1 +1,12 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+cnt = 0
+for i in range(1, n):
+    si = str(i)
+    if '50' in si:
+        cnt += 2
+    else:
+        cnt += 1
+print(cnt+1)

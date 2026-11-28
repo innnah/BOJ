@@ -1,1 +1,3 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import math
+n = int(input())
+print(math.factorial(n)//(7*24*60*60))

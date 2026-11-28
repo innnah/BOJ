@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+print("@"*(n+2))
+for _ in range(n):
+    print("@" + " "*n + "@")
+print("@"*(n+2))

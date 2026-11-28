@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b, c = map(int, input().split())
+print(c//a-(b-1)//a)

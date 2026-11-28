@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n=int(input())
+print(sum([int(input()) for _ in range(n)]))

@@ -1,1 +1,11 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b = map(int, input().split())
+c, d = map(int, input().split())
+while b > 0 and d > 0:
+    d -= a
+    b -= c
+if b <= 0 and d <= 0:
+    print("DRAW")
+elif b <= 0:
+    print("PLAYER B")
+else:
+    print("PLAYER A")

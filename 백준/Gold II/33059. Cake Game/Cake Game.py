@@ -1,1 +1,13 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+for _ in range(int(input())):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    b = n//2+1
+    ans = sum(arr[:b])
+    cand = ans
+    for i in range(b, n):
+        cand = cand + arr[i] - arr[i-b]
+        ans = min(cand, ans)
+    print(ans, sum(arr)-ans)

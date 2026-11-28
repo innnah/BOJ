@@ -1,1 +1,10 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+cnt = 1
+a = 1
+n = int(input())
+if n == 0:
+    print(0)
+    exit(0)
+while a < n:
+    a *= 2
+    cnt += 1
+print(cnt)

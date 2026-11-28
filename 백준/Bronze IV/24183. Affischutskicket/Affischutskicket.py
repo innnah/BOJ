@@ -1,1 +1,2 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a, b, c = map(int, input().split())
+print("%.6f" % ((148392*a+249480*b+62370*c) * 0.000001))

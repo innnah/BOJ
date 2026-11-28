@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n, l, r = map(int, input().split())
+arr = list(map(int, input().split()))
+arr[l-1:r] = sorted(arr[l-1:r])
+print(int(sorted(arr) == arr))

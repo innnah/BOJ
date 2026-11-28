@@ -1,1 +1,12 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+l = list(map(int, input().split()))
+o, e = 0, 0
+for i in range(n):
+    if l[i]%2:
+        o += 1
+    else:
+        e += 1
+if o < e:
+    print("Happy")
+else:
+    print("Sad")

@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+s = input()
+n = len(s)
+cnt = 0
+for i in range(n-3):
+    if s[i:i+4] == "DKSH":
+        cnt += 1
+print(cnt)

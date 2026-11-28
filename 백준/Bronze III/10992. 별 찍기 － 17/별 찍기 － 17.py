@@ -1,1 +1,4 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+print(" "*(n-1)+"*")
+for i in range(1,n-1):print(" "*(n-i-1)+"*"+" "*(2*i-1)+"*")
+if n!=1:print("*"*(2*n-1))

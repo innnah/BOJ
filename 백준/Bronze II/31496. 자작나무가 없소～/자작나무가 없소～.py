@@ -1,1 +1,13 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n, birch = input().rstrip().split()
+n = int(n)
+ret = 0
+for _ in range(n):
+    a, b = input().rstrip().split()
+    b = int(b)
+    a = a.split("_")
+    if birch in a:
+        ret += b
+print(ret)

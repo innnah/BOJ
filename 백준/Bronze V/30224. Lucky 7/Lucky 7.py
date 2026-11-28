@@ -1,1 +1,4 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+tmp = input()
+n = int(tmp)
+a = list(map(int, tmp))
+print(2*(7 in a)+(not (n%7)))

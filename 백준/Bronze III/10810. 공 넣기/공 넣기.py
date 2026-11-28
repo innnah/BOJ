@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n, m = map(int, input().split())
+l = [0 for _ in range(n)]
+for i in range(m):
+    a, b, c = map(int, input().split())
+    for j in range(a-1, b):
+        l[j] = c
+print(*l)

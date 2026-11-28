@@ -1,1 +1,8 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+s = 0
+for _ in range(int(input())):
+    a, d, g = map(int, input().split())
+    if a == d+g:
+        s = max(s, a*(d+g)*2)
+    else:
+        s = max(s, a*(d+g))
+print(s)

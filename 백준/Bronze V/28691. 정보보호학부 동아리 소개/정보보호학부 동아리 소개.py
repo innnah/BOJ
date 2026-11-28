@@ -1,1 +1,11 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+s=input()
+if s=="M":
+    print("MatKor")
+if s=="W":
+    print("WiCys")
+if s=="C":
+    print("CyKor")
+if s=="A":
+    print("AlKor")
+if s=="$":
+    print("$clear")

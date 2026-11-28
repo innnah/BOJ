@@ -1,1 +1,21 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+n = int(input())
+s = input().rstrip()
+s1, s2 = "", ""
+for i in range(n):
+    s1 += s[i]
+    s2 = s[n-i-1] + s2
+    dif = 0
+    for j in range(len(s1)):
+        if s1[j] != s2[j]:
+            if dif:
+                dif = 2
+                break
+            else:
+                dif = 1
+    if dif == 1:
+        print("YES")
+        break
+else:
+    print("NO")

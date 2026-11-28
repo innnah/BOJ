@@ -1,1 +1,1 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+print("Yes" if sum([int(input()) for _ in range(4)]) <= 1500 else "No")

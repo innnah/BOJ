@@ -1,1 +1,3 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+arr = [list(map(int, input().split())) for _ in range(n)]
+print(max([i[0]*i[1] for i in arr]))

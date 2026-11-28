@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n, m, k = map(int, input().split())
+if n%m != k%m or (n<k and m<=0) or (n>k and m>=0):
+    print("X")
+else:
+    print((k-n) // m + 1)

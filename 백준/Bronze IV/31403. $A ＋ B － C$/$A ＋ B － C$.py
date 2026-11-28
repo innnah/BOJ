@@ -1,1 +1,5 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+a = int(input())
+b = int(input())
+c = int(input())
+print(a+b-c)
+print(int(str(a)+str(b))-int(c))

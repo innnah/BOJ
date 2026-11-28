@@ -1,1 +1,13 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+while 1:
+    a, b = map(float, input().split())
+    if a > 0 and b > 0:
+        print("Q1")
+    elif a < 0 and b > 0:
+        print("Q2")
+    elif a < 0 and b < 0:
+        print("Q3")
+    elif a > 0 and b < 0:
+        print("Q4")
+    else:
+        print("AXIS")
+    if not a and not b: break

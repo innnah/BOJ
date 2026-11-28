@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+_,a,b=map(int, input().split())
+if a < b:
+    print("Bus")
+elif a == b:
+    print("Anything")
+else:
+    print("Subway")

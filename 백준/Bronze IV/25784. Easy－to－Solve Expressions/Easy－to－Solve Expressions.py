@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+l = list(sorted(map(int, input().split())))
+if l[0]+l[1] == l[2]:
+    print(1)
+elif l[0]*l[1] == l[2]:
+    print(2)
+else:
+    print(3)

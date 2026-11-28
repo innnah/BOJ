@@ -1,1 +1,7 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+n = int(input())
+mod = 1000000009
+ans = 1
+for i in range(1, n+1):
+    ans *= 2*i-1
+    ans %= mod
+print(ans)

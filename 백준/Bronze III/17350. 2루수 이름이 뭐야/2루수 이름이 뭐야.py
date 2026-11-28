@@ -1,1 +1,6 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+for _ in range(int(input())):
+    if input().rstrip() == "anj":
+        print("뭐야;")
+        break
+else:
+    print("뭐야?")

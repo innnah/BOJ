@@ -1,1 +1,11 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys
+input = sys.stdin.readline
+
+n, k = map(int, input().split())
+s = set([input().rstrip() for _ in range(n)])
+cnt = 0
+for _ in range(k):
+    st = input().rstrip()
+    if st in s:
+        cnt += 1
+print(cnt)

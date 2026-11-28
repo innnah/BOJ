@@ -1,1 +1,8 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+import sys, math
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+ret = 0
+for i in range(1, n+1):
+    ret = (((ret * (10 ** (int(math.log10(i))+1)))%m) + (i%m)) % m
+print(ret)

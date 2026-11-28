@@ -1,1 +1,4 @@
-<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden
+while 1:
+    a,b,c,d=map(int,input().split())
+    if (a,b,c,d)==(0,0,0,0):break
+    print(c-b,d-a)
